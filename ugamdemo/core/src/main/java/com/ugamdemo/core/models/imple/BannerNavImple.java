@@ -1,7 +1,7 @@
 package com.ugamdemo.core.models.imple;
 
-import com.ugamdemo.core.models.Bannerarea;
-import com.ugamdemo.core.models.Practice;
+import com.ugamdemo.core.models.BannerNav;
+
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -9,10 +9,10 @@ import org.apache.sling.models.annotations.Model;
 import javax.inject.Inject;
 
 @Model(adaptables = Resource.class,
-        adapters = Bannerarea.class,
+        adapters = BannerNav.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class Bannerareaimple implements Bannerarea {
+public class BannerNavImple implements BannerNav {
     @Inject
     String heading;
 
