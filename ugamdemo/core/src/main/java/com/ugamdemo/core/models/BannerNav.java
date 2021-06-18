@@ -4,4 +4,5 @@ public interface BannerNav {
     String getHeading();
     String getHomecomp();
     String getMaincomp();
+    String getPath();
 }

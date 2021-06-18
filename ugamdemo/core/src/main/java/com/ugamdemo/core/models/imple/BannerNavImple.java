@@ -22,6 +22,9 @@ public class BannerNavImple implements BannerNav {
     @Inject
     String maincomp;
 
+    @Inject
+    String path;
+
     @Override
     public String getHeading() {
         return heading;
@@ -35,5 +38,10 @@ public class BannerNavImple implements BannerNav {
     @Override
     public String getMaincomp() {
         return maincomp;
+    }
+
+    @Override
+    public String getPath() {
+        return path;
     }
 }
