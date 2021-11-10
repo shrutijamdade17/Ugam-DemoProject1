@@ -25,6 +25,9 @@ public class TitleTextImple implements TitleText {
     @Inject
     Boolean sectionGap;
 
+    @Inject
+    Boolean backgroundColor;
+
     @Override
     public String getTitle() {
         return title;
@@ -43,5 +46,10 @@ public class TitleTextImple implements TitleText {
     @Override
     public Boolean getSectionGap() {
         return sectionGap;
+    }
+
+    @Override
+    public Boolean getBackgroundColor() {
+        return backgroundColor;
     }
 }

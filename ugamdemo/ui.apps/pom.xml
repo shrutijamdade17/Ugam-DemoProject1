@@ -181,5 +181,18 @@
             <version>1.2.0-1.4.0</version>
             <scope>provided</scope>
         </dependency>
+
+<dependency>
+    <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+    <artifactId>accesscontroltool-package</artifactId>
+    <version>2.6.2</version>
+    <type>zip</type>
+    <exclusions>
+        <exclusion>
+        <groupId>biz.netcentric.cq.tools.accesscontroltool</groupId>
+            <artifactId>accesscontroltool-bundle</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
     </dependencies>
 </project>
