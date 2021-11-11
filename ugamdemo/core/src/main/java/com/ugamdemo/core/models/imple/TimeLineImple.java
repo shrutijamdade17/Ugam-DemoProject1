@@ -1,5 +1,6 @@
 package com.ugamdemo.core.models.imple;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugamdemo.core.models.TimeLine;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -38,6 +39,12 @@ public class TimeLineImple implements TimeLine {
     @ChildResource
     Resource timelinemulti;
 
+    @JsonProperty(value = "Component Name")
+    public String ComponentName(){
+        return "Timeline Component";
+    }
+
+    @JsonProperty(value = "Timeline Details")
     @Override
     public List<Map<String, String>> getTimeLineDetails() {
         List<Map<String, String>> timeLineMap=new ArrayList<>();
