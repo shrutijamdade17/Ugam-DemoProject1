@@ -1,4 +1,4 @@
-package com.ugamdemo.core.models.imple;
+package com.ugamdemo.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;

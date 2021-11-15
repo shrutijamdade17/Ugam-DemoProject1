@@ -1,4 +1,4 @@
-package com.ugamdemo.core.models.imple;
+package com.ugamdemo.core.models.impl;
 
 import com.ugamdemo.core.models.Footer;
 import org.apache.sling.api.resource.Resource;

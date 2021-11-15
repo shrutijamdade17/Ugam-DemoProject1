@@ -1,0 +1,17 @@
+{
+    "banner":{
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "admin",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:created": "Fri Jun 18 2021 00:34:57 GMT+0530",
+        "img": "/content/dam/ugamdemo/hero-img.png",
+        "info": "You will begin.",
+        "name": "Philip Gilbert",
+        "path": "/content/ugamdemo/us/en/about",
+        "buttontxt": "discover now",
+        "title": "This is me",
+        "jcr:lastModified": "Fri Jun 18 2021 00:36:00 GMT+0530",
+        "sling:resourceType": "ugamdemo/components/content/bannerarea"
+    }
+
+  }
