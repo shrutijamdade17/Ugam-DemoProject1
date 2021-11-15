@@ -1,5 +1,6 @@
 package com.ugamdemo.core.models.imple;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugamdemo.core.models.Testimonial;
 import org.apache.sling.api.resource.Resource;
@@ -33,16 +34,24 @@ public class TestimonialImple implements Testimonial {
     @Inject
     String designation;
 
+    @JsonProperty(value = "Component Name")
+    public String ComponentName(){
+        return "Testimonial Component";
+    }
+
+    @JsonProperty(value = "Description")
     @Override
     public String getDesc() {
         return desc;
     }
 
+    @JsonProperty(value = "Name")
     @Override
     public String getName() {
         return name;
     }
 
+    @JsonProperty(value = "Designation")
     @Override
     public String getDesignation() {
         return designation;

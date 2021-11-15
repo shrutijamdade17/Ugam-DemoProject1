@@ -1,5 +1,6 @@
 package com.ugamdemo.core.models.imple;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.ugamdemo.core.models.HomeAbout;
 import org.apache.sling.api.resource.Resource;
@@ -41,6 +42,12 @@ public class HomeAboutImple implements HomeAbout {
     @Inject
     String path;
 
+    @JsonProperty(value = "Component Name")
+    public String ComponentName(){
+        return "HomeAbout Component";
+    }
+
+    @JsonProperty(value = "Image Path")
     @Override
     public String getImg() {
         return img;
@@ -56,11 +63,13 @@ public class HomeAboutImple implements HomeAbout {
         return title;
     }
 
+    @JsonProperty(value = "Description")
     @Override
     public String getDesc() {
         return desc;
     }
 
+    @JsonProperty(value = "Text on Button")
     @Override
     public String getBtntxt() {
         return btntxt;
