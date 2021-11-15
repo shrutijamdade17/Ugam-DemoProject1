@@ -1,6 +1,6 @@
-package com.ugamdemo.core.models.imple;
+package com.ugamdemo.core.models.impl;
 
-import com.ugamdemo.core.models.Portfolio;
+import com.ugamdemo.core.models.Blogteaser;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -8,27 +8,20 @@ import org.apache.sling.models.annotations.Model;
 import javax.inject.Inject;
 
 @Model(adaptables = Resource.class,
-        adapters = Portfolio.class,
+        adapters = Blogteaser.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class PortfolioImple implements Portfolio {
-
-    @Inject
-    String img;
-
+public class Blogteaserimple implements Blogteaser {
     @Inject
     String title;
 
     @Inject
-    String text;
+    String desc;
 
     @Inject
-    String preview;
+    String img;
 
-    @Override
-    public String getImg() {
-        return img;
-    }
+
 
     @Override
     public String getTitle() {
@@ -36,13 +29,12 @@ public class PortfolioImple implements Portfolio {
     }
 
     @Override
-    public String getText() {
-        return text;
+    public String getDesc() {
+        return desc;
     }
 
     @Override
-    public String getPreview() {
-        return preview;
-    }
+    public String getImg() { return img ;}
+
 
 }

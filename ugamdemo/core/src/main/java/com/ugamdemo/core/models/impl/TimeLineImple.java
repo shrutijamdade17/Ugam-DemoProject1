@@ -1,4 +1,4 @@
-package com.ugamdemo.core.models.imple;
+package com.ugamdemo.core.models.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 @Model(
-        adaptables = SlingHttpServletRequest.class,
+        adaptables = Resource.class,
         adapters = TimeLine.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         resourceType = TimeLineImple.RESOURCE_TYPE

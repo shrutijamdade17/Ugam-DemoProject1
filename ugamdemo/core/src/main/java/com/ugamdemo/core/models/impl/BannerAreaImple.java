@@ -1,4 +1,4 @@
-package com.ugamdemo.core.models.imple;
+package com.ugamdemo.core.models.impl;
 
 import com.ugamdemo.core.models.BannerArea;
 import org.apache.sling.api.resource.Resource;
@@ -9,9 +9,12 @@ import javax.inject.Inject;
 
 @Model(adaptables = Resource.class,
         adapters = BannerArea.class,
+        resourceType = BannerAreaImple.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class BannerAreaImple implements BannerArea {
+
+    final protected static String RESOURCE_TYPE="ugams/components/content/bannerarea";
 
     @Inject
     String title;

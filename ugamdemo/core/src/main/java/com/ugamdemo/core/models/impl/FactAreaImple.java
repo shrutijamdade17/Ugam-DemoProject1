@@ -1,4 +1,4 @@
-package com.ugamdemo.core.models.imple;
+package com.ugamdemo.core.models.impl;
 
 import com.ugamdemo.core.models.FactArea;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -14,8 +14,6 @@ import java.util.Map;
 import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.inject.Inject;
 
 @Model(
         adaptables = SlingHttpServletRequest.class,
