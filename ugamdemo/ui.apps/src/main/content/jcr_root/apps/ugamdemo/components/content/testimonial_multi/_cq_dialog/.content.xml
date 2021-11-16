@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Time Line"
+    jcr:title="Testimonial-Multi"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -9,52 +9,47 @@
         <items jcr:primaryType="nt:unstructured">
             <tabs
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/tabs"
-                maximized="true">
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
                 <items jcr:primaryType="nt:unstructured">
                     <general
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Time Line"
-                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                        margin="true">
+                        jcr:title="Testimonial-Multi"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
                         <items jcr:primaryType="nt:unstructured">
                             <column
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <timelinemulti
+                                    <testimonialmulti
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                         composite="{Boolean}true"
-                                        fieldLable="Time Line"
+                                        fieldLable="Testimonial Multi"
                                         required="{Boolean}false">
                                         <field
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/container"
-                                            emptyText="Time Line"
-                                            name="./timeline">
+                                            emptyText="Testimonial Multi"
+                                            name="./testimonialmulti">
                                             <items jcr:primaryType="nt:unstructured">
-                                                <title
+                                                <desc
                                                     jcr:primaryType="nt:unstructured"
-                                                    jcr:title="Title"
-                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Title"
-                                                    name="./title"/>
-                                                <year
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldLabel="Description"
+                                                    name="./desc"/>
+                                                <name
                                                     jcr:primaryType="nt:unstructured"
-                                                    jcr:title="Year"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Year"
-                                                    name="./year"/>
-                                                <result
+                                                    fieldLabel="Name"
+                                                    name="./name"/>
+                                                <designation
                                                     jcr:primaryType="nt:unstructured"
-                                                    jcr:title="Result"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                    fieldLabel="Result"
-                                                    name="./result"/>
+                                                    fieldLabel="Designation"
+                                                    name="./designation"/>
                                             </items>
                                         </field>
-                                    </timelinemulti>
+                                    </testimonialmulti>
                                 </items>
                             </column>
                         </items>

@@ -1,22 +1,25 @@
 
 
  <section class="section-gap p-0">
-                <div class="container" data-sly-use.testimonial="com.ugamdemo.core.models.Testimonial">  
+                <div class="container" data-sly-use.testimonial_multi="com.ugamdemo.core.models.TestimonialMultifield">  
                  <div class="row">
+                 <div class="row" data-sly-list.item="${testimonial_multi.testimonialMultiDetails}">
                         <div class="active-testimonial">
                         <div class="single-testimonial item d-flex flex-row">
+
                                 <div class="thumb">
                                     <img class="img-fluid" src="" alt="">
                                 </div>
                                 <div class="desc">               
                                     <p>
-                                        ${testimonial.desc}
+                                        ${item.desc}
                                     </p>
-                                    <h4>${testimonial.name}</h4>
-                                    <p>${testimonial.designation}</p>
+                                    <h4>${item.name}</h4>
+                                    <p>${item.designation}</p>
                                 </div>
                             </div>
                            </div>
                     </div>
                  </div>
+                 <div>
          </section>
