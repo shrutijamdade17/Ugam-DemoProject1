@@ -22,6 +22,6 @@ public class servletPathDemo extends SlingAllMethodsServlet {
         int value1 = Integer.parseInt(request.getParameter("val1"));
         int value2 = Integer.parseInt(request.getParameter("val2"));
         int sum = value1+value2;
-        response.getWriter().println(sum);
+        response.getWriter().print(sum);
     }
 }
