@@ -17,8 +17,6 @@ public class servletPathDemo extends SlingAllMethodsServlet {
 
     @Override
     protected void doGet(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws IOException {
-        //String val1 = request.getParameter("val1");
-        //String val2 = request.getParameter("val2");
         int value1 = Integer.parseInt(request.getParameter("val1"));
         int value2 = Integer.parseInt(request.getParameter("val2"));
         int sum = value1+value2;
